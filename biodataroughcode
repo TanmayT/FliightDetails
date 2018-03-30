@@ -39,9 +39,6 @@ public class biodata extends JFrame {
   l5=new JLabel("Date OF Birth               :-");
   l7=new JLabel("Gender                          :-");
   l8=new JLabel("Nationality                    :-");
-  l9=new JLabel("Known Language       :-");
-  l10=new JLabel("Qualification                :-");
-  l11=new JLabel("Other Qualification     :-");
   t1=new JTextField(20);
   ta1=new JTextArea(20,20);
   int v=ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS;
@@ -56,9 +53,6 @@ public class biodata extends JFrame {
   bg1.add(rb1);
   bg1.add(rb2);
   t5=new JTextField(20);
-  ch1=new JCheckBox("Marathi");
-  ch2=new JCheckBox("Hindi");
-  ch3=new JCheckBox("English");
   ta2=new JTextArea(20,20);
     
   String col[]={"Sr No.","Exam Detail","University/Boards","Year Of     Passing","Grade/Class","Percentage"};
@@ -83,9 +77,6 @@ public class biodata extends JFrame {
   l5.setBounds(80,260,150,30);
   l7.setBounds(80,340,150,30);
   l8.setBounds(80,380,150,30);
-  l9.setBounds(80,420,150,30);
-  l10.setBounds(80,460,150,30);
-  l11.setBounds(80,600,150,30);
 
   t1.setBounds(250,80,200,25);
   s.setBounds(250,120,200,50);
@@ -95,9 +86,6 @@ public class biodata extends JFrame {
   rb1.setBounds(250,340,100,25);
   rb2.setBounds(350,340,200,25);
   t5.setBounds(250,380,200,25);
-  ch1.setBounds(250,420,80,20);
-  ch2.setBounds(330,420,60,20);
-  ch3.setBounds(400,420,80,20);
   s1.setBounds(20,500,600,100);
   s2.setBounds(250,610,300,70);
   b1.setBounds(200,700,100,30);
@@ -108,14 +96,11 @@ public class biodata extends JFrame {
   p.add(l3);p.add(l4);
   p.add(l5);
   p.add(l7);p.add(l8);
-  p.add(l9);p.add(l10);
-  p.add(l11);p.add(t1);
+  p.add(t1);
   p.add(s);p.add(t2);
   p.add(t3);p.add(t4);
   p.add(rb1);
   p.add(rb2);p.add(t5);
-  p.add(ch1);p.add(ch2);
-  p.add(ch3);
   p.add(s1);p.add(s2);
   p.add(b1);p.add(b2);
 
