@@ -17,10 +17,9 @@ import javax.swing.table.*;
 public class biodata extends JFrame {
 
  JFrame f;
- JLabel l,l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11;
+ JLabel l,l1,l2,l3,l4,l5,l7,l8,l9,l10,l11;
  JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,td;
  JTextArea ta1,ta2;
- JComboBox c1;
  JButton b1,b2;
  JRadioButton rb1,rb2;
  ButtonGroup bg1;
@@ -30,15 +29,14 @@ public class biodata extends JFrame {
  DefaultTableModel model,dtm; 
 
  public biodata() {
-  f=new JFrame("BIODATA");
-  l=new JLabel("BioData");
-  l.setFont(new Font("Algerian",Font.BOLD,40));
+  f=new JFrame("INDIGO");
+  l=new JLabel("Flight Details");
+  l.setFont(new Font("Algerian",Font.BOLD,25));
   l1=new JLabel("Name                         :-");
   l2=new JLabel("Address                       :-");
   l3=new JLabel("Contact Number         :-");
   l4=new JLabel("E-Mail Address           :-");
   l5=new JLabel("Date OF Birth               :-");
-  l6=new JLabel("Marital Status             :-");
   l7=new JLabel("Gender                          :-");
   l8=new JLabel("Nationality                    :-");
   l9=new JLabel("Known Language       :-");
@@ -52,9 +50,6 @@ public class biodata extends JFrame {
   t2=new JTextField(20);
   t3=new JTextField(20);
   t4=new JTextField(20);
-  c1=new JComboBox();
-  c1.addItem("Married");
-  c1.addItem("Unmarried");
   rb1=new JRadioButton("Male");
   rb2=new JRadioButton("Female");
   bg1=new ButtonGroup();
@@ -86,7 +81,6 @@ public class biodata extends JFrame {
   l3.setBounds(80,180,150,30);
   l4.setBounds(80,220,150,30);
   l5.setBounds(80,260,150,30);
-  l6.setBounds(80,300,150,30);
   l7.setBounds(80,340,150,30);
   l8.setBounds(80,380,150,30);
   l9.setBounds(80,420,150,30);
@@ -98,7 +92,6 @@ public class biodata extends JFrame {
   t2.setBounds(250,180,200,25);
   t3.setBounds(250,220,200,25);
   t4.setBounds(250,260,200,25);
-  c1.setBounds(250,300,200,25);
   rb1.setBounds(250,340,100,25);
   rb2.setBounds(350,340,200,25);
   t5.setBounds(250,380,200,25);
@@ -113,13 +106,13 @@ public class biodata extends JFrame {
   p.add(l);
   p.add(l1);p.add(l2);
   p.add(l3);p.add(l4);
-  p.add(l5);p.add(l6);
+  p.add(l5);
   p.add(l7);p.add(l8);
   p.add(l9);p.add(l10);
   p.add(l11);p.add(t1);
   p.add(s);p.add(t2);
   p.add(t3);p.add(t4);
-  p.add(c1);p.add(rb1);
+  p.add(rb1);
   p.add(rb2);p.add(t5);
   p.add(ch1);p.add(ch2);
   p.add(ch3);
