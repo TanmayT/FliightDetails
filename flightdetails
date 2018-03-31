@@ -1,0 +1,138 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author tanmay
+ */
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class flightdetails extends JFrame {
+
+ JFrame f;
+ JLabel l,l1,l2,l3,l4,l5,l7,l8,l9,l10,l11,l12;
+ JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9;
+ JTextArea ta1;
+ JButton b1,b2;
+ JRadioButton rb1,rb2;
+ ButtonGroup bg1;
+
+ public flightdetails() {
+  f=new JFrame("INDIGO");
+  l=new JLabel("Flight Details");
+  l.setFont(new Font("Algerian",Font.BOLD,25));
+  l1=new JLabel("Name                         :-");
+  l2=new JLabel("Address                       :-");
+  l3=new JLabel("Contact Number         :-");
+  l4=new JLabel("E-Mail Address           :-");
+  l5=new JLabel("Date OF Birth               :-");
+  l7=new JLabel("Gender                          :-");
+  l8=new JLabel("Nationality                    :-");
+  l9=new JLabel("From                           :-");
+  l10=new JLabel("To                             :-");
+  l11=new JLabel("Departure Date                 :-");
+  l12=new JLabel("Return Date                    :-");
+  t1=new JTextField(20);
+  ta1=new JTextArea(20,20);
+  int v=ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS;
+  int h=ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS;
+  JScrollPane s=new JScrollPane(ta1,v,h);
+  t2=new JTextField(20);
+  t3=new JTextField(20);
+  t4=new JTextField(20);
+  rb1=new JRadioButton("Male");
+  rb2=new JRadioButton("Female");
+  bg1=new ButtonGroup();
+  bg1.add(rb1);
+  bg1.add(rb2);
+  t5=new JTextField(20);
+  t6=new JTextField(20);
+  t7=new JTextField(20);
+  t8=new JTextField(20);
+  t9=new JTextField(20);
+  
+  
+  
+     
+ 
+  b1=new JButton("Submit");
+  b2=new JButton("Cancel");
+  JPanel p=new JPanel();
+  p.setLayout(null);
+
+  l.setBounds(200,30,200,50);
+  l1.setBounds(80,80,150,30);
+  l2.setBounds(80,130,150,30);
+  l3.setBounds(80,180,150,30);
+  l4.setBounds(80,220,150,30);
+  l5.setBounds(80,260,150,30);
+  l7.setBounds(80,340,150,30);
+  l8.setBounds(80,380,150,30);
+  l9.setBounds(80,420,150,30);
+  l10.setBounds(80,460,150,30);
+  l11.setBounds(80,500,150,30);
+  l12.setBounds(80,540,150,30);
+  
+  t1.setBounds(250,80,200,25);
+  s.setBounds(250,120,200,50);
+  t2.setBounds(250,180,200,25);
+  t3.setBounds(250,220,200,25);
+  t4.setBounds(250,260,200,25);
+  rb1.setBounds(250,340,100,25);
+  rb2.setBounds(350,340,200,25);
+  t5.setBounds(250,380,200,25);
+  t6.setBounds(250,420,200,25);
+  t7.setBounds(250,460,200,25);
+  t8.setBounds(250,500,200,25);
+  t9.setBounds(250,540,200,25);
+  b1.setBounds(200,700,100,30);
+  b2.setBounds(350,700,100,30);
+  
+  p.add(l);
+  p.add(l1);p.add(l2);
+  p.add(l3);p.add(l4);
+  p.add(l5);
+  p.add(l7);p.add(l8);
+  p.add(l9);p.add(l10);
+  p.add(l11);p.add(l12);
+  p.add(t1);
+  p.add(s);p.add(t2);
+  p.add(t3);p.add(t4);
+  p.add(rb1);
+  p.add(rb2);p.add(t5);
+  p.add(t6);
+  p.add(t7);
+  p.add(t8);
+  p.add(t9);
+  p.add(b1);p.add(b2);
+
+  f.add(p,BorderLayout.CENTER);
+  f.add(p);
+  
+  f.setSize(650,780);
+  f.setVisible(true);
+  f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  
+
+   b1.addActionListener(new ActionListener()
+ {
+
+              public void actionPerformed(ActionEvent ae)
+   {
+          JOptionPane.showMessageDialog(null, "Data added Successfully ");
+
+              }
+        });
+
+  }
+  public static void main(String args[]){
+   flightdetails b=new flightdetails(); 
+ }
+}
+
